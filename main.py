@@ -7,14 +7,14 @@ intents.guilds = True
 intents.messages = True
 
 client = discord.Client(intents=intents)
-CHANNEL_ID = channel_id_here #replace this with the free api u get on apilayer.com
+CHANNEL_ID = channel_id_here # Replace this with the free api u get on apilayer.com
 
 async def update_exchange_rate():
     channel = client.get_channel(CHANNEL_ID)
 
     # Send a request to the API to get the exchange rate
     url = "https://api.apilayer.com/currency_data/live?source=USD&currencies=EGP"
-    api_key = "" #Api key here apilayer.com
+    api_key = "" # Api key here apilayer.com
     headers = {
         "apikey": api_key
     }
