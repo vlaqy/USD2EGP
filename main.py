@@ -7,7 +7,7 @@ intents.guilds = True
 intents.messages = True
 
 client = discord.Client(intents=intents)
-CHANNEL_ID = channel_id_here # Replace this with the free api u get at apilayer.com
+CHANNEL_ID = channel_id_here # Replace this with the free api key u get at apilayer.com
 
 async def update_exchange_rate():
     channel = client.get_channel(CHANNEL_ID)
